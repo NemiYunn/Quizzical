@@ -5,9 +5,128 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* mine */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 110vh;
+  margin: 0;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* css for start page */ 
+/* have changed body{} too ^above */
+main {
+  text-align: center;
+}
+
+button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.random--shape1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 310px;
+  height: 291px;
+}
+
+.random--shape2 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 298px;
+  height: 268px;
+}
+
+
+/* quiz file css */
+/* Apply a general style to the container */
+.question-container {
+  width: 600px; /* Adjust the width as needed */
+  margin: auto;
+  text-align: center;
+}
+
+/* Style for the question */
+.question-container h3 {
+  color: #293264;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* Style for the answer options container */
+.question-container .answer-options {
+  display: flex;
+  justify-content: space-around; /* Adjust as needed for spacing */
+  margin-top: 10px;
+}
+
+/* Style for each answer option */
+.question-container .answer-options div {
+  flex: 1;
+  border: 1px solid #4D5B9E;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Add hover effect on answer options */
+.question-container .answer-options div:hover {
+  background-color: #D6DBF5;
+  color: #fff;
+}
+
+.question-container .answer-options hr {
+  border: 1px solid #DBDEF0;
+  margin: 10px 0;
+  width: 100%;
+}
+
+/* Style for the button */
+.check-answers-button {
+  display: block;
+  margin: 20px auto; /* Center-align the button */
+  padding: 15px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Add hover effect on the button */
+.check-answers-button:hover {
+  background-color: #2980b9;
+}
+
+/* add color to the selected/clicked answer */
+.selected-answer {
+  background-color: #2980b9; /* Change this to your desired color */
+  color: white; /* Change this to your desired text color */
+}
+
+.correct {
+  background-color: #66ff66; /* Green color for correct answers */
+}
+
+.incorrect {
+  background-color: #ff6666; /* Red color for incorrect answers */
+}
+
+.correct-match{
+  background-color: #66ff66; /* Green color for correct answers */
 }
